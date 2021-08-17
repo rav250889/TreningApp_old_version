@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+	<meta charset="utf-8">
+	<title>Trening App</title>
+	<meta name="author" content="Rafał Wałach tel. (48)730 341 343">
+	<meta name="description" content="Aplikacja pozwala na tworzenie własnego planu treningowego. Posiada możliwość zliczania wykonanych serii treningowych">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/plan.css">
+	<link rel="icon" type="image/x-icon" href="../img/trening.jpg"/>
+</head>
+
+<body>
+	<header>
+		<h1>Plan treningowy</h1>
+		<div id="loggedUser"></div>
+		<div class="day"></div>
+		<div id="main-buttons">
+			<input type="button" value="Dodaj" id="new-position">
+			<input type="button" value="Usuń" id="delete-position">
+			<input type="button" id="start_workout" value="Zacznij">
+		</div>
+	</header>
+	<nav id="changeData">
+		<label>Rodzaj ćwiczenia</label><br>
+		<input type="text" id="workoutupdate"><br>
+		<label>Ilość serii</label><br>
+		<input type="text" id="seriesupdate"><br>
+		<label>Ilość powtórzen</label><br>
+		<input type="text" id="repetitionsupdate">
+		<div id="buttonsChange">
+			<input type="button" id="cancelChange" value="Anuluj">
+			<input type="button" id="acceptedChange" value="Zapisz">
+		</div>
+	</nav>
+	<main>
+		
+		<div id="start">
+            <div id="counter"></div>
+        </div>
+        <div id="scrollTable">
+            <table>
+				<thead>
+					<th><span>Rodzaj ćwiczenia</span></th>
+					<th><span>Ilość serii</span></th>
+					<th><span>Ilość powt.</span></th>
+					<th><span>Akcja</span></th>
+				</thead>
+			</table>
+		</div>
+	</main>
+	<footer></footer>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/plan.js"></script>
+</body>
+
+</html>

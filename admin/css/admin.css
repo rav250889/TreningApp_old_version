@@ -1,0 +1,212 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: url("../../img/trening.jpg");
+	background-size: 100% 100vh;
+	border: 1px solid #6b6b6b;
+}
+
+header
+{
+	background: rgba(3.14,14.51,40.39,0.9);	
+	padding-bottom: 2%;
+	border-bottom: 1px solid #6b6b6b;
+}
+
+header h1
+{
+	font-size: 200%;
+	color: #b9b1b1;
+	font-family: Arial;
+	font-style: italic;
+	font-weight: bold;
+	font-variant: small-caps;
+	padding-top: 5%;
+	margin-left: 3%;
+}
+
+main
+{
+	padding-top: 10%;
+	background: rgba(3.14,14.51,40.39,0.9);
+	height: 100vh;
+}
+
+#main-buttons
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#addUser, #changePassword, #delUser
+{
+	width: 100%;
+	margin-bottom: 10%;
+	border: none;
+	background: none;
+	color: #b9b1b1;
+	font-size: 110%;
+	font-weight: bold;
+	font-family: Arial;
+	padding: 2%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 5px #b9b1b1;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+label
+{
+	color: #b9b1b1;
+	font-size: 110%;
+	font-weight: bold;
+	font-family: Arial;	
+}
+
+#username, #password, #usernameChangePassword, #passwoerdChangePassword, #deluser
+{
+	width: 100%;
+	margin-bottom: 10%;
+	margin-top: 2%;
+	border: none;
+	background: none;
+	color: #b9b1b1;
+	font-size: 110%;
+	font-weight: bold;
+	font-family: Arial;
+	padding: 2%;
+	border-radius: 5px;
+	border: 1px solid rgb(209,234,0);
+	transition: 0.2s;
+}
+
+.buttons
+{
+	padding: 2%;
+	width: 30%;
+	float: right;
+	background: none;
+	color: #b9b1b1;
+	cursor: pointer;
+	font-size: 110%;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+#addUserAccept, #changePasswordAccept, #delUserAccept
+{
+	border: 1px solid rgb(209,234,0);
+}
+
+#addUserCancel, #changePasswordCancel, #delUserCancel
+{
+	border: 1px solid #fe0174;
+	margin-left: 5%;
+	margin-bottom: 10%;
+}
+
+#addUserAccept:active, #changePasswordAccept:active, #delUserAccept:active, #addUserCancel:active, #changePasswordCancel:active, #delUserCancel:active
+{
+	border: none;
+}
+
+#addUser:active, #changePassword:active, #delUser:active
+{
+	box-shadow: none;
+}
+
+section
+{
+	display: none;
+}
+#userList h1
+{
+	text-align: center;
+	margin-bottom: 5%;
+	font-size: 180%;
+}
+
+#userList
+{
+	clear: both;
+	color: #b9b1b1;
+	display: block;
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+#userList ol li
+{
+	color: #fe0174;
+	margin-left: 25%;
+	font-size: 150%;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 400px) and (orientation: landscape)
+{
+	main
+	{
+		height: auto;
+	}
+}
+	
+@media only screen and (min-width: 400px)and (orientation: landscape)
+{
+	main
+	{
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 600px)
+{
+	#main-buttons
+	{
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1280px)
+{
+	header h1
+	{
+		font-size: 300%;
+		margin-left: 2%;
+	}
+	
+	main
+	{
+		padding-top: 2%;
+	}
+	
+	#main-buttons
+	{
+		width: 20%;
+	}
+	
+	#userList h1
+	{
+		margin-bottom: 1%;
+		text-align: left;
+		margin-left: 2%;
+	}
+	
+	#userList ol li
+	{
+		margin-left: 3%;
+	
+	}
+	
+	#userList
+	{
+		padding-bottom: 20%;
+	}
+}
